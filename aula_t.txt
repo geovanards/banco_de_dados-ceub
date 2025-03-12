@@ -1,1 +1,36 @@
-Geo
+-- banco de dados: aula 3 --
+
+1- Como usar o git: instale o git em sua máquina
+2- Criar conta no GitHub
+3- Criar o repositório
+
+-- Comandos --
+
+1- git clone
+2- git Status
+3- git add .
+4- git commit -m "alguma mensagem"
+5- git push origin main
+
+-- SQL --
+
+* DCL
+
+* DDL
+- CREATE
+- ALTER
+
+* DML
+- SELECT
+- INSERT
+- UPDATE
+- DELETE
+
+*Agregação
+- COUNT: SELECT COUNT(*) FROM medicos;
+- MIN/MAX: SELECT MIN(idade) FROM medicos;
+- AVG
+- SUM
+
+* ORDER BY
+SELECT * FROM medicos ORDER BY idade;
