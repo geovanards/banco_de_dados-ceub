@@ -83,5 +83,4 @@ from movies as m
 -- 10 Liste todos os filmes e seus diretores, incluindo os filmes sem diretores
 select *
 from movies as m 
-	join tickets as t on t.movie_id = m.id
-	right join directors as d on m.director_id = d.id;
+	left join directors as d on m.director_id = d.id;
