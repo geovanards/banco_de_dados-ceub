@@ -54,6 +54,6 @@ SELECT  c.nome as curso,
         LIMIT 5;
 
 -- 6 - Gere o CROSS JOIN das tabelas cursos e ofertas
-SELECT*
+SELECT *
 FROM curso c
 CROSS JOIN oferta o ON o.id_curso = c.id_curso;
