@@ -53,6 +53,19 @@ SELECT  c.nome as curso,
         ORDER BY media_carga_horaria DESC
         LIMIT 5;
 
+--ou
+
+select c.id_curso, (c.carga_horaria) as media
+from curso as c
+	join oferta as o on c.id_curso = o.id_curso
+	join inscricao as i on i.id_oferta = o.id_oferta
+    join usuario as u on u.id_usuario = i.id_usuario
+where u.data_nascimento
+	between '1980-01-01' and '2000-12-31'
+group by c.id_curso
+order by media DESC
+limit 5;
+
 -- 6 - Gere o CROSS JOIN das tabelas cursos e ofertas
 SELECT *
 FROM curso c
